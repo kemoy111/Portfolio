@@ -12,9 +12,11 @@
             /* Adjust header */
             header.sticky {
                 height: auto;
+                padding: 10px 5%;
             }
             .logo {
                 text-align: center;
+                font-size: 28px;
             }
             .navlist {
                 display: none;
@@ -23,9 +25,18 @@
                 display: block;
             }
             /* Adjust home section */
+            .home {
+                padding: 100px 5%;
+                justify-content: center;
+            }
             .home-text {
                 text-align: center;
-                padding: 50px 20px;
+                padding: 50px 0;
+            }
+            .home-text h1 {
+                font-size: 120px;
+                line-height: 100px;
+                margin-left: 0;
             }
             /* Adjust about section */
             .about .main {
@@ -35,13 +46,34 @@
                 max-width: 100%;
                 height: auto;
             }
+            .about-text {
+                width: 100%;
+            }
             /* Adjust achievements section */
             .achievements .title h2 {
                 padding-right: 0;
+                font-size: 35px;
+                text-align: center;
+            }
+            .box {
+                display: block;
+                text-align: center;
+            }
+            .card {
+                width: 100%;
+                margin: 15px 0;
             }
             /* Adjust hobbies section */
             .hobbies .main-text h2 {
                 padding-right: 0;
+                font-size: 35px;
+                text-align: center;
+            }
+            .hobbies-content {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            }
+            .row {
+                margin-bottom: 20px;
             }
         }
     </style>
@@ -74,93 +106,93 @@
 
     <section class="about" id="about">
         <div class="main">
-            <img src="321727016_5748988945169505_5218286521722568933_n.jpg">
-            <div class="about-text">
-                <h2>About <span>Me</span></h2>
-                <h5>Student</h5>
-                <p>Good Day everyone! I'am Kem S. Gallo, currently residing at Barangay San Enrique, San Lorenzo, Guimaras. I graduated my senior high school at Buenavista National High School under the TVL-ICT and Animation Strands. And right now, at Guimaras State University, I'm continuing my academic education by pursuing a Bachelor of Science in Information Technology</p>
-                <button type="button">Thank You!</button>
-            </div>
-        </div>
-    </section>
+         <img src="321727016_5748988945169505_5218286521722568933_n.jpg" alt="Profile Picture">
+         <div class="about-text">
+             <h2>About Me</h2>
+             <p>I am a passionate student studying Information Technology at Guimaras State University - Mosqueda Campus. I have a keen interest in web development and enjoy creating responsive and user-friendly websites.</p>
+             <p>I have experience working with HTML, CSS, and JavaScript, and I am always eager to learn new technologies and frameworks to enhance my skills.</p>
+             <p>Feel free to explore my portfolio and get in touch with me for any inquiries or collaboration opportunities!</p>
+         </div>
+     </div>
+ </section>
 
-    <section class="achievements" id="achievements">
-        <div class="title">
-            <h2 style="padding-right: 20%;">My <span>Achievements</span></h2>
-        </div>
+ <section class="achievements" id="achievements">
+     <div class="title">
+         <h2>My Achievements</h2>
+     </div>
+     <div class="box">
+      <div class="card card_small">
+          <i class="fa-solid fa-basketball-ball"></i>
+          <h3>Baskteball</h3>
+          <p>One of the member of the Team Lebas Under 30</p>
+          <a href="#" class="btn">Thank You</a>
+      </div>
+      <div class="card card_wide">
+         <i class="fa-solid fa-volleyball-ball"></i>
+         <h3>Volleyball</h3>
+         <p>3 times Champion Volleyball League at Barangay San Enrique</p>
+         <p>Champion in Mayors Cup at the Municipality of San Lorenzo.</p>
+         <p>Champion during the Foundation Day at the Municipality of San Lorenzo</p>
+         <a href="#" class="btn">Thank You</a>
+     </div>
+     <div class="card card_small">
+      <i class="fa-solid fa-school"></i>
+      <h3>Graduate</h3>
+      <p>Graduated my Senior High School at Buenavista National High School</p>
+      <a href="#" class="btn">Thank You</a>
+  </div>
+</div>
+</section>
+     </div>
+ </section>
 
-        <div class="box">
-            <div class="card card_small">
-                <i class="fa-solid fa-basketball-ball"></i>
-                <h3>Baskteball</h3>
-                <p>One of the member of the Team Lebas Under 30</p>
-                <a href="#" class="btn">Thank You</a>
-            </div>
+ <section class="hobbies" id="hobbies">
+   <div class="main-text">
+       <h2 style="padding-right: 20%;"><span>My</span> Hobbies</h2>
+   </div>
 
-            <div class="card card_wide">
-                <i class="fa-solid fa-volleyball-ball"></i>
-                <h3>Volleyball</h3>
-                <p>3 times Champion Volleyball League at Barangay San Enrique</p>
-                <p>Champion in Mayors Cup at the Municipality of San Lorenzo.</p>
-                <p>Champion during the Foundation Day at the Municipality of San Lorenzo</p>
-                <a href="#" class="btn">Thank You</a>
-            </div>
+   <div class="hobbies-content">
+       <div class="row">
+           <img src="image01.jpg">
+           <div class="layer">
+               <h5>Volleyball</h5>
+               <p>Playing volleyball is one of my favorite sports.</p>
+               <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+           </div>
+       </div>
 
-            <div class="card card_small">
-                <i class="fa-solid fa-school"></i>
-                <h3>Graduate</h3>
-                <p>Graduated my Senior High School at Buenavista National High School</p>
-                <a href="#" class="btn">Thank You</a>
-            </div>
-        </div>
-    </section>
+       <div class="row">
+           <img src="image04.jpg">
+           <div class="layer">
+               <h5>Dancing</h5>
+               <p>Feel the music and rhythm</p>
+               <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+           </div>
+       </div>
 
-    <section class="hobbies" id="hobbies">
-        <div class="main-text">
-            <h2 style="padding-right: 20%;"><span>My</span> Hobbies</h2>
-        </div>
+       <div class="row">
+           <img src="image03.jpg">
+           <div class="layer">
+               <h5>Photography</h5>
+               <p>One of my skills</p>
+               <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+           </div>
+       </div>
+   </div>
+</section>
 
-        <div class="hobbies-content">
-            <div class="row">
-                <img src="image01.jpg">
-                <div class="layer">
-                    <h5>Volleyball</h5>
-                    <p>Playing volleyball is one of my favorite sports.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
+<section class="end">
+   <div class="last-text">
+       <p>Copyright © 2023 by Kem S. Gallo All Rights Reserved.</p>
+   </div>
+   <div class="top">
+       <a href="#home"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+   </div>
+</section>
 
-            <div class="row">
-                <img src="image04.jpg">
-                <div class="layer">
-                    <h5>Dancing</h5>
-                    <p>Feel the music and rhythm</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-
-            <div class="row">
-                <img src="image03.jpg">
-                <div class="layer">
-                    <h5>Photography</h5>
-                    <p>One of my skills</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="end">
-        <div class="last-text">
-            <p>Copyright © 2023 by Kem S. Gallo All Rights Reserved.</p>
-        </div>
-        <div class="top">
-            <a href="#home"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
-        </div>
-    </section>
-
-    <script type="text/javascript" src="js/script.js"></script>
-
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+ <script src="script.js"></script>
 </body>
 
 </html>
+
